@@ -87,7 +87,7 @@ document.getElementById("kbtn").addEventListener("click",function(){
   const r = document.getElementById("total").innerText;
 const t = parseInt(r)
   if(a == "Rahat"){
-      const rt = t-20
+      const rt = t-100
       innerTextSet("gt",rt)
       
   }
