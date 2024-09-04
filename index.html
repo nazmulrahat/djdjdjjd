@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html data-theme="cupcake"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel </title>
+    <link rel="shortcut icon" href="img/6350271.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css.css">
+
+</head>
+<body id="tttrrr" class="h-screen flex flex-col justify-around items-center mx-10">
+  <div class=" bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+    <section id="RRR" class="flex flex-col gap-3 md:flex-row   text-2xl font-extrabold  ">
+
+    <h1 class="">Card Added: <samp id="added-card">0</samp></h1> 
+    <br> 
+        <div class="flex flex-row">
+          <div>
+            <H1 class="text-wrap">Total Budget:</H1>
+          </div>
+        <div class="flex">
+          <h1 id="beget">900</h1>
+        <h1>$</h1>
+        </div>
+        </div>
+    </section>
+<!-- ............... -->
+ <section class="flex flex-col lg:flex-row  justify-around pt-9 gap-20 ">
+    <!-- card -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 justify-around gap-6 ">
+      <div class="flex flex-col text-center gap-3 items-center w-80 bg-lime-500 pb-4 border-amber-300 border-4">
+        <img class="hover:animate-pulse" src="img/rt.jpg" alt="">
+     
+        <h2  class="text-xl font-extrabold">Dhaka</h2>
+        <p>cost: </p>
+        <p>300 <samp>$</samp></p>
+        <button class="btn">Add Card</button>
+      </div>
+      <div class="flex flex-col text-center gap-3 items-center w-80 bg-lime-500 pb-4 border-amber-300 border-4">
+        <img src="img/13.jpg" alt="">
+        <h2  class="text-xl font-extrabold">Sherpur</h2>
+        <p>cost: </p>
+        <p>300 <samp>$</samp></p>
+        <button class="btn">Add Card</button>
+      </div>
+      <div class="flex flex-col text-center gap-3 items-center w-80 bg-lime-500 pb-4 border-amber-300 border-4">
+        <img src="img/3.jpg" alt="">
+        <h2  class="text-xl font-extrabold">Mymensingh</h2>
+        <p>cost: </p>
+        <p>500 <samp>$</samp></p>
+        <button class="btn">Add Card</button>
+      </div>
+      <div class="flex flex-col text-center gap-3 items-center w-80 bg-lime-500 pb-4 border-amber-300 border-4">
+        <img src="img/2.jpg" alt="">
+        <h2  class="text-xl font-extrabold">Jamalpur</h2>
+        <p>cost: </p>
+        <p>500 <samp>$</samp></p>
+        <button class="btn">Add Card</button>
+      </div>
+    </div>
+    <!-- count -->
+    <div>
+        <div>
+            <h1 >Card</h1>
+            <ul id="ul" class=" font-bold flex flex-col"></ul>
+            <br>
+            <h3>Total cost: <samp id="total">0</samp>$</h3>
+            <br>
+            <div class=" font-semibold flex flex-row-2 justify-around gap-4">
+                <div onclick="grantTotalCost('Bus')" class="btn flex">
+                  <p>Bus </p>
+                  <button class="bn" >+100</button>
+                </div>
+                <div  onclick="grantTotalCost('Flight')"   class="btn flex">
+                  <p>Flight</p>
+                  <button class="bn">+500</button>
+                </div>
+                <div onclick="grantTotalCost('Train')" class=" btn flex">
+                  <p>Train</p>
+                <button class="bn">-200</button>
+                </div>
+            </div>
+            <br>
+            <div class=" flex md:flex-col lg:flex-row gap-8  ">
+              <input id="kupon" type="text" placeholder="Input Kupon"class=" mb-2 input input-bordered input-accent w-full   " />
+              
+              <button id="kbtn" class="btn lg:w-28 md:w-full  btn-warning ">Apply</button>
+            </div>
+            <br>
+           <div class="font-extrabold text-xl"> 
+            <h1>Grand Total: <samp id="gt">0</samp>$</h1>
+           
+          </div>
+        </div>
+    </div>
+ </section>
+<!-- .................. -->
+<div>
+  
+</div>
+
+
+    <script src="js.js"></script>
+</body>
+</html>
